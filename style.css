@@ -44,7 +44,7 @@ h3 { /* исключение: намеренный сброс стилей по 
   list-style: none;
 }
 input,
-button{ /* исключение: намеренный сброс стилей по умолчанию */
+button { /* исключение: намеренный сброс стилей по умолчанию */
   outline: none;
 }
 .button {
@@ -118,7 +118,7 @@ button{ /* исключение: намеренный сброс стилей п
   font-size: 18px;
   width: 226px;
 }
-.list-item >    .input[type="text"] {
+.list-item > .input[type="text"] {
   width: 226px;
 }
 .button.delete-task .delete-task-image {
