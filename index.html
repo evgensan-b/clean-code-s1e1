@@ -11,55 +11,55 @@
   </head>
   <body class="page">
     <header class="header">
-      <img class="header-image" src="./eisenhower-matrix.jpg" alt="The Eisenhower matrix">
+      <img class="header__image" src="./eisenhower-matrix.jpg" alt="The Eisenhower matrix">
       <a 
-        class="more-info-link" 
+        class="header__link-more-info" 
         href="https://goal-life.com/page/method/matrix-eisenhower"
       >
         Want more details?
       </a>
     </header>
-    <main class="main">
-      <section id="top-section">
-        <label class="label" for="new-task">Add Item</label>
-        <form class="task-row-wrapper">
-          <input id="new-task" class="task input" type="text">
-          <button class="button">Add</button>
+    <main class="todo-app">
+      <section id="section-add" class="todo-app__section">
+        <label class="todo-app__label" for="new-task">Add Item</label>
+        <form class="todo-app__form">
+          <input id="new-task" class="todo-app__input u-flex-grow" type="text">
+          <button class="todo-app__button">Add</button>
         </form>
       </section>
-      <section>
-        <h1 class="section-title">Todo</h1>
-        <ul class="task-list" id="incomplete-tasks">
-          <li class="list-item">
-            <input class="input" type="checkbox">
-            <label class="task label">Pay Bills</label>
-            <input type="text" class="task input">
-            <button class="edit-task button">Edit</button>
-            <button class="delete-task button">
-              <img class="delete-task-image" src="./remove.svg" alt="">
+      <section class="todo-app__section">
+        <h1 class="todo-app__title">Todo</h1>
+        <ul id="incomplete-tasks" class="todo-app__list">
+          <li class="todo-app__list-item">
+            <input class="todo-app__input" type="checkbox">
+            <label class="todo-app__label u-flex-grow">Pay Bills</label>
+            <input class="todo-app__input u-flex-grow" type="text">
+            <button class="todo-app__button todo-app__button_edit">Edit</button>
+            <button class="todo-app__button todo-app__button_delete">
+              <img class="todo-app__image-delete" src="./remove.svg" alt="">
             </button>
           </li>
-          <li class="list-item edit-mode">
-            <input class="input" type="checkbox">
-            <label class="task label">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task input">
-            <button class="edit-task button">Save</button>
-            <button class="delete-task button">
-              <img class="delete-task-image" src="./remove.svg" alt="">
+          <li class="todo-app__list-item list-item_edit-mode">
+            <input class="todo-app__input" type="checkbox">
+            <label class="todo-app__label u-flex-grow">Go Shopping</label>
+            <input class="todo-app__input u-flex-grow" type="text" value="Go Shopping">
+            <button class="todo-app__button todo-app__button_edit">Save</button>
+            <button class="todo-app__button todo-app__button_delete">
+              <img class="todo-app__image-delete" src="./remove.svg" alt="">
             </button>
           </li>
         </ul>
       </section>
-      <section>
-        <h2 class="section-title">Completed</h2>
-        <ul class="task-list" id="completed-tasks">
-          <li class="list-item">
-            <input class="input" type="checkbox" checked>
-            <label class="task label">See the Doctor</label>
-            <input type="text" class="task input">
-            <button class="edit-task button">Edit</button>
-            <button class="delete-task button">
-              <img class="delete-task-image" src="./remove.svg" alt="">
+      <section class="todo-app__section">
+        <h2 class="todo-app__title">Completed</h2>
+        <ul id="completed-tasks" class="todo-app__list">
+          <li class="todo-app__list-item">
+            <input class="todo-app__input" type="checkbox" checked>
+            <label class="todo-app__label u-flex-grow">See the Doctor</label>
+            <input class="todo-app__input u-flex-grow" type="text">
+            <button class="todo-app__button todo-app__button_edit">Edit</button>
+            <button class="todo-app__button todo-app__button_delete">
+              <img class="todo-app__image-delete" src="./remove.svg" alt="">
             </button>
           </li>
         </ul>
